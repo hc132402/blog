@@ -59,7 +59,7 @@ public class BlogController {
     /**
      * 编辑博客 & 新增博客
      */
-    @RequiresAuthentication
+    @RequiresAuthentication // 需要登录权限
     @PostMapping("/blog/edit")
     public Result editBolg(@Validated @RequestBody Blog blog){
         // 判断参数中是否有id   有id是编辑  无id是新增
